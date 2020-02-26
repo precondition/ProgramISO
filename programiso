@@ -1,0 +1,68 @@
+partial alphanumeric_keys modifier_keys
+xkb_symbols "programiso" {
+    include "us"
+    name[Group1]= "ProgramISO";
+    
+    // Numbers/Backspace row
+    key <TLDE> { [      grave, asciitilde,  acircumflex,  Acircumflex ] };
+    key <AE01> { [          1,     exclam,       agrave,       Agrave ] };
+    key <AE02> { [          2,         at,       eacute,       Eacute ] };
+    key <AE03> { [          3, numbersign,       egrave,       Egrave ] };
+    key <AE04> { [          4,     dollar,  ecircumflex,  Ecircumflex ] };
+    key <AE05> { [          5,    percent,     ccedilla,     Ccedilla ] };
+    key <AE06> { [          6,asciicircum,  ucircumflex,  Ucircumflex ] };
+    key <AE07> { [          7,  ampersand,       ugrave,       Ugrave ] };
+    key <AE08> { [          8,   asterisk,   idiaeresis,   Idiaeresis ] };
+    key <AE09> { [          9,  parenleft,  icircumflex,  Icircumflex ] };
+    key <AE10> { [          0, parenright,  ocircumflex,  Ocircumflex ] };
+    key <AE11> { [bracketleft,  parenleft,    braceleft,        minus ] };
+    key <AE12> { [bracketright,parenright,   braceright,        equal ] };
+
+    // Tab row
+    key <TAB>  { [        Tab,ISO_Left_Tab,       equal, ISO_Left_Tab ] };
+    key <AD01> { [          q,          Q,       exclam,     NoSymbol ] };
+    key <AD02> { [          w,          W,           at,     NoSymbol ] };
+    key <AD03> { [          e,          E,   numbersign,     NoSymbol ] };
+    key <AD04> { [          r,          R,       dollar,     NoSymbol ] };
+    key <AD05> { [          t,          T,      percent,     NoSymbol ] };
+    key <AD06> { [          y,          Y,  asciicircum,     NoSymbol ] };
+    key <AD07> { [          u,          U,    ampersand,     NoSymbol ] };
+    key <AD08> { [          i,          I,     asterisk,     NoSymbol ] };
+    key <AD09> { [          o,          O,   asciitilde,     NoSymbol ] };
+    key <AD10> { [          p,          P,         plus,     NoSymbol ] };
+    key <AD11> { [  BackSpace,  BackSpace,  bracketleft,    BackSpace ] };
+    key <AD12> { [ underscore,     minus,  bracketright,     NoSymbol ] };
+
+    // Caps Lock row                        
+    key <AC01> { [          a,          A,         Home,     NoSymbol ] };
+    key <AC02> { [          s,          S,         Next,         Next ] };
+    key <AC03> { [          d,          D,        Prior,        Prior ] };
+    key <AC04> { [          f,          F,          End,          End ] };
+    key <AC05> { [          g,          G,     NoSymbol,     NoSymbol ] };
+    key <AC06> { [	        h,          H,         Left,    leftarrow ] };
+    key <AC07> { [	        j,          J,         Down,    downarrow ] };
+    key <AC08> { [	        k,          K,           Up,      uparrow ] };
+    key <AC09> { [	        l,          L,        Right,   rightarrow ] };
+    key <AC10> { [  Control_R,  Control_R,    Control_R,    Control_R ] };
+    key <AC11> { [ apostrophe,	 quotedbl,	      grave,        grave ]	};
+    key <AC12> { [      colon,  semicolon,     NoSymbol,     NoSymbol ] };
+
+    // Shift row
+    key <AB01> { [          z,          Z,        equal,     NoSymbol ] };
+    key <AB02> { [          x,          X,       Delete,       Delete ] };
+    key <AB03> { [          c,          C,    parenleft,     NoSymbol ] };
+    key <AB04> { [          v,          V,  bracketleft,  bracketleft ] };
+    key <AB06> { [          n,          N, bracketright, bracketright ] };
+    key <AB07> { [          m,          M   ] };
+    key <AB08> { [      comma,       less,    braceleft,    braceleft ] };
+    key <AB09> { [     period,    greater,   braceright,   braceright ] };
+    key <AB10> { [    Shift_R,    Shift_R,      Shift_R,      Shift_R ] };
+    key <RTSH> { [      slash,   question,    backslash,          bar ] };
+
+    // Space bar row
+    key <LCTL> { [  backslash, bar, NoSymbol, NoSymbol               ] };
+    
+    include "level3(ralt_latch)"
+    include "ctrl(swap_lctl_lshift)"
+    include "compose(rctrl)"
+};
