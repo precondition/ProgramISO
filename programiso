@@ -1,5 +1,5 @@
 partial alphanumeric_keys modifier_keys
-xkb_symbols "programiso" {
+xkb_symbols "basic" {
     include "us"
     name[Group1]= "ProgramISO";
     
@@ -10,9 +10,8 @@ xkb_symbols "programiso" {
     key <AE03> { [          3, numbersign,       egrave,       Egrave ] };
     key <AE04> { [          4,     dollar,  ecircumflex,  Ecircumflex ] };
     key <AE05> { [          5,    percent,     ccedilla,     Ccedilla ] };
-    key <AE06> { [          6,asciicircum,  ucircumflex,  Ucircumflex ] };
     key <AE07> { [          7,  ampersand,       ugrave,       Ugrave ] };
-    key <AE08> { [          8,   asterisk,   idiaeresis,   Idiaeresis ] };
+    key <AE08> { [          8,   asterisk,  ucircumflex,  Ucircumflex ] };
     key <AE09> { [          9,  parenleft,  icircumflex,  Icircumflex ] };
     key <AE10> { [          0, parenright,  ocircumflex,  Ocircumflex ] };
     key <AE11> { [bracketleft,  parenleft,    braceleft,        minus ] };
@@ -48,7 +47,7 @@ xkb_symbols "programiso" {
     key <AC12> { [      colon,  semicolon,     NoSymbol,     NoSymbol ] };
 
     // Shift row
-    key <AB01> { [          z,          Z,        equal,     NoSymbol ] };
+    key <AB01> { [          z,          Z,         Undo,     NoSymbol ] };
     key <AB02> { [          x,          X,       Delete,       Delete ] };
     key <AB03> { [          c,          C,    parenleft,     NoSymbol ] };
     key <AB04> { [          v,          V,  bracketleft,  bracketleft ] };
@@ -57,11 +56,16 @@ xkb_symbols "programiso" {
     key <AB08> { [      comma,       less,    braceleft,    braceleft ] };
     key <AB09> { [     period,    greater,   braceright,   braceright ] };
     key <AB10> { [    Shift_R,    Shift_R,      Shift_R,      Shift_R ] };
-    key <RTSH> { [      slash,   question,    backslash,          bar ] };
+    // ↓ TODO: Change that into something that is useful.
+    key <RTSH> { [      mu,   paragraph,    backslash,      bar  ] };
 
     // Space bar row
-    key <LCTL> { [  backslash, bar, NoSymbol, NoSymbol               ] };
+    //key <LCTL> { [  backslash, bar, NoSymbol, NoSymbol               ] };
     
+    // Spare keys for xcape to grab
+    key <FK24> { [      slash,    question,     slash, question ] };
+    key <FK19> { [  backslash, bar, NoSymbol, NoSymbol               ] };
+
     include "level3(ralt_latch)"
     include "ctrl(swap_lctl_lshift)"
     include "compose(rctrl)"
