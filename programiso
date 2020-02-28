@@ -33,6 +33,7 @@ xkb_symbols "basic" {
     key <AD12> { [ underscore,     minus,  bracketright,     NoSymbol ] };
 
     // Caps Lock row                        
+    key <CAPS> { [ISO_Level3_Shift,Escape,     Escape,       Escape ] };
     key <AC01> { [          a,          A,         Home,     NoSymbol ] };
     key <AC02> { [          s,          S,         Next,         Next ] };
     key <AC03> { [          d,          D,        Prior,        Prior ] };
@@ -60,7 +61,7 @@ xkb_symbols "basic" {
     key <RTSH> { [      mu,   paragraph,    backslash,      bar  ] };
 
     // Space bar row
-    //key <LCTL> { [  backslash, bar, NoSymbol, NoSymbol               ] };
+    key <SPCE> { [      space,      minus,   underscore,        space ] };
     
     // Spare keys for xcape to grab
     key <FK24> { [      slash,    question,     slash, question ] };
