@@ -72,7 +72,7 @@
     {
       "w": 1.5
     },
-    "↹\n\n\n=",
+    "↹\n\n\n=\n\n\n\n\n\nLevel3",
     "Q\n\n\n!",
     "W\n\n\n@",
     "E\n\n\n#",
@@ -84,7 +84,7 @@
     "O\n\n\n~",
     "P\n\n\n+",
     "⌫\n\n\n[",
-    "-\n_\n\n]",
+    "Delete\n\n\n]",
     {
       "x": 0.25,
       "w": 1.25,
@@ -115,7 +115,7 @@
     {
       "w": 1.75
     },
-    "Escape",
+    "Escape\n\n;\n:",
     "A\n\n\nHome",
     "S\n\n\nPgDn",
     "D\n\n\nPgUp",
@@ -156,13 +156,11 @@
     ">\n.\n\n\n\n\n\n\n\n\n}",
     "?\n/\n\n\n\n\n\n\n\nShift",
     {
-      "a": 7,
       "w": 2.75
     },
-    "",
+    "Compose",
     {
-      "x": 1.25,
-      "a": 4
+      "x": 1.25
     },
     "↑",
     {
@@ -192,12 +190,10 @@
     },
     "Alt",
     {
-      "a": 7,
       "w": 6.25
     },
-    "",
+    "- hyphen\nSpace\n\n_ underscore",
     {
-      "a": 4,
       "w": 1.25
     },
     "Level3",

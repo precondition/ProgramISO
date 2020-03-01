@@ -18,7 +18,7 @@ xkb_symbols "basic" {
     key <AE12> { [bracketright,parenright,   braceright,        equal ] };
 
     // Tab row
-    key <TAB>  { [        Tab,ISO_Left_Tab,       equal, ISO_Left_Tab ] };
+    key <TAB>  { [ISO_Level3_Shift,ISO_Level3_Shift,equal,ISO_Left_Tab] };
     key <AD01> { [          q,          Q,       exclam,     NoSymbol ] };
     key <AD02> { [          w,          W,           at,     NoSymbol ] };
     key <AD03> { [          e,          E,   numbersign,     NoSymbol ] };
@@ -30,10 +30,10 @@ xkb_symbols "basic" {
     key <AD09> { [          o,          O,   asciitilde,     NoSymbol ] };
     key <AD10> { [          p,          P,         plus,     NoSymbol ] };
     key <AD11> { [  BackSpace,  BackSpace,  bracketleft,    BackSpace ] };
-    key <AD12> { [ underscore,     minus,  bracketright,     NoSymbol ] };
+    key <AD12> { [     Delete,     Delete,  bracketright,    NoSymbol ] };
 
     // Caps Lock row                        
-    key <CAPS> { [ISO_Level3_Shift,Escape,     Escape,       Escape ] };
+    key <CAPS> { [     Escape,     Escape,        colon,    semicolon ] };
     key <AC01> { [          a,          A,         Home,     NoSymbol ] };
     key <AC02> { [          s,          S,         Next,         Next ] };
     key <AC03> { [          d,          D,        Prior,        Prior ] };
@@ -58,14 +58,16 @@ xkb_symbols "basic" {
     key <AB09> { [     period,    greater,   braceright,   braceright ] };
     key <AB10> { [    Shift_R,    Shift_R,      Shift_R,      Shift_R ] };
     // ↓ TODO: Change that into something that is useful.
-    key <RTSH> { [      mu,   paragraph,    backslash,      bar  ] };
+    // Possibly a multi_key
+    key <RTSH> { type[Group1]="TWO_LEVEL", [ Multi_key, Multi_key ] };
 
     // Space bar row
     key <SPCE> { [      space,      minus,   underscore,        space ] };
     
     // Spare keys for xcape to grab
-    key <FK24> { [      slash,    question,     slash, question ] };
-    key <FK19> { [  backslash, bar, NoSymbol, NoSymbol               ] };
+    key <FK24> { [      slash,    question,       slash,     question ] };
+    key <FK19> { [  backslash,         bar,    NoSymbol,   NoSymbol   ] };
+    key <I168> { [        Tab,ISO_Left_Tab,       equal, ISO_Left_Tab ] };
 
     include "level3(ralt_latch)"
     include "ctrl(swap_lctl_lshift)"
