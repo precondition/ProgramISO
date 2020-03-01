@@ -45,7 +45,7 @@ xkb_symbols "basic" {
     key <AC09> { [	        l,          L,        Right,   rightarrow ] };
     key <AC10> { [  Control_R,  Control_R,    Control_R,    Control_R ] };
     key <AC11> { [ apostrophe,	 quotedbl,	      grave,        grave ]	};
-    key <AC12> { [      colon,  semicolon,     NoSymbol,     NoSymbol ] };
+    key <AC12> { [  semicolon,      colon,     NoSymbol,     NoSymbol ] };
 
     // Shift row
     key <AB01> { [          z,          Z,         Undo,     NoSymbol ] };
