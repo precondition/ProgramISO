@@ -1,6 +1,6 @@
 partial alphanumeric_keys modifier_keys
 xkb_symbols "basic" {
-    include "us"
+    include "us(altgr-intl)"
     name[Group1]= "ProgramISO";
     
     // Numbers/Backspace row
@@ -14,11 +14,11 @@ xkb_symbols "basic" {
     key <AE08> { [          8,   asterisk,  ucircumflex,  Ucircumflex ] };
     key <AE09> { [          9,  parenleft,  icircumflex,  Icircumflex ] };
     key <AE10> { [          0, parenright,  ocircumflex,  Ocircumflex ] };
-    key <AE11> { [bracketleft,  parenleft,    braceleft,        minus ] };
-    key <AE12> { [bracketright,parenright,   braceright,        equal ] };
+    key <AE11> { [guillemotleft,   degree,    braceleft,        minus ] };
+    key <AE12> { [guillemotright,enfilledcircbullet,braceright, equal ] };
 
     // Tab row
-    key <TAB>  { [ISO_Level3_Shift,ISO_Level3_Shift,equal,ISO_Left_Tab] };
+    key <TAB>  { [ISO_Level3_Shift,ISO_Level3_Shift,ISO_Level3_Shift,ISO_Left_Tab] };
     key <AD01> { [          q,          Q,       exclam,     NoSymbol ] };
     key <AD02> { [          w,          W,           at,     NoSymbol ] };
     key <AD03> { [          e,          E,   numbersign,     NoSymbol ] };
@@ -30,15 +30,15 @@ xkb_symbols "basic" {
     key <AD09> { [          o,          O,   asciitilde,     NoSymbol ] };
     key <AD10> { [          p,          P,         plus,     NoSymbol ] };
     key <AD11> { [  BackSpace,  BackSpace,  bracketleft,    BackSpace ] };
-    key <AD12> { [     Delete,     Delete,  bracketright,    NoSymbol ] };
+    key <AD12> { [     Delete,     Delete, bracketright,     NoSymbol ] };
 
     // Caps Lock row                        
     key <CAPS> { [     Escape,     Escape,        colon,    semicolon ] };
-    key <AC01> { [          a,          A,         Home,     NoSymbol ] };
+    key <AC01> { [          a,          A,         Home,         Home ] };
     key <AC02> { [          s,          S,         Next,         Next ] };
     key <AC03> { [          d,          D,        Prior,        Prior ] };
     key <AC04> { [          f,          F,          End,          End ] };
-    key <AC05> { [          g,          G,     NoSymbol,     NoSymbol ] };
+    key <AC05> { [          g,          G,     XF86AudioRaiseVolume,G ] };
     key <AC06> { [	        h,          H,         Left,    leftarrow ] };
     key <AC07> { [	        j,          J,         Down,    downarrow ] };
     key <AC08> { [	        k,          K,           Up,      uparrow ] };
@@ -48,17 +48,10 @@ xkb_symbols "basic" {
     key <AC12> { [  semicolon,      colon,     NoSymbol,     NoSymbol ] };
 
     // Shift row
-    key <AB01> { [          z,          Z,         Undo,     NoSymbol ] };
-    key <AB02> { [          x,          X,       Delete,       Delete ] };
-    key <AB03> { [          c,          C,    parenleft,     NoSymbol ] };
-    key <AB04> { [          v,          V,  bracketleft,  bracketleft ] };
-    key <AB06> { [          n,          N, bracketright, bracketright ] };
-    key <AB07> { [          m,          M   ] };
+    key <AB04> { [          v,          V,  XF86AudioLowerVolume,  V ] };
     key <AB08> { [      comma,       less,    braceleft,    braceleft ] };
     key <AB09> { [     period,    greater,   braceright,   braceright ] };
     key <AB10> { [    Shift_R,    Shift_R,      Shift_R,      Shift_R ] };
-    // ↓ TODO: Change that into something that is useful.
-    // Possibly a multi_key
     key <RTSH> { type[Group1]="TWO_LEVEL", [ Multi_key, Multi_key ] };
 
     // Space bar row
@@ -71,5 +64,4 @@ xkb_symbols "basic" {
 
     include "level3(ralt_latch)"
     include "ctrl(swap_lctl_lshift)"
-    include "compose(rctrl)"
 };
