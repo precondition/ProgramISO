@@ -3,7 +3,7 @@ xkb_symbols "basic" {
     include "us(altgr-intl)"
     name[Group1]= "ProgramISO";
     
-    // Numbers/Backspace row
+    // Numbers/Backspace row ---------------------------------------------
     key <TLDE> { [      grave, asciitilde,  acircumflex,  Acircumflex ] };
     key <AE01> { [          1,     exclam,       agrave,       Agrave ] };
     key <AE02> { [          2,         at,       eacute,       Eacute ] };
@@ -17,7 +17,7 @@ xkb_symbols "basic" {
     key <AE11> { [guillemotleft,   degree,    braceleft,        minus ] };
     key <AE12> { [guillemotright,enfilledcircbullet,braceright, equal ] };
 
-    // Tab row
+    // Tab row -----------------------------------------------------------
     key <TAB>  { [ISO_Level3_Shift,ISO_Level3_Shift,ISO_Level3_Shift,ISO_Left_Tab] };
     key <AD01> { [          q,          Q,       exclam,     NoSymbol ] };
     key <AD02> { [          w,          W,           at,     NoSymbol ] };
@@ -32,7 +32,7 @@ xkb_symbols "basic" {
     key <AD11> { [  BackSpace,  BackSpace,  bracketleft,    BackSpace ] };
     key <AD12> { [     Delete,     Delete, bracketright,     NoSymbol ] };
 
-    // Caps Lock row                        
+    // Caps Lock row -----------------------------------------------------                        
     key <CAPS> { [     Escape,     Escape,        colon,    semicolon ] };
     key <AC01> { [          a,          A,         Home,         Home ] };
     key <AC02> { [          s,          S,         Next,         Next ] };
@@ -47,21 +47,34 @@ xkb_symbols "basic" {
     key <AC11> { [ apostrophe,	 quotedbl,	      grave,        grave ]	};
     key <AC12> { [  semicolon,      colon,     NoSymbol,     NoSymbol ] };
 
-    // Shift row
+    // Shift row ---------------------------------------------------------
+    // Swap the functions of the left control and the left shift
+    replace key <LFSH> { [  Control_L ] };
+    replace key <LSGT> { [  Shift_L,    Shift_L,    Shift_L,   Shift_L  ] };
+    modifier_map shift { <LSGT> };
+    modifier_map Control { <LFSH> };
+
     key <AB04> { [          v,          V,  XF86AudioLowerVolume,  V ] };
     key <AB08> { [      comma,       less,    braceleft,    braceleft ] };
     key <AB09> { [     period,    greater,   braceright,   braceright ] };
     key <AB10> { [    Shift_R,    Shift_R,      Shift_R,      Shift_R ] };
     key <RTSH> { type[Group1]="TWO_LEVEL", [ Multi_key, Multi_key ] };
 
-    // Space bar row
+    // Space bar row -----------------------------------------------------
+    // Turn the physical left control key into an additional modifier, 
+    // thus unlocking a whole new layer of possible keyboard shortcuts.
+    replace key <LCTL> { [ Hyper_L ] };
+    modifier_map Mod3 { <LCTL> };
+
+    // AltGr (or right Alt) temporarily switches to level 3 for the next key.
+    // Double-tap AltGr to lock Level3,  double-tap again to unlock level3
+    key <RALT> { type[Group1]="ONE_LEVEL", symbols[Group1] = [ ISO_Level3_Latch ] };
+    include "level3(modifier_mapping)"
+
     key <SPCE> { [      space,      minus,   underscore,        space ] };
     
-    // Spare keys for xcape to grab
+    // Spare keys for xcape to grab --------------------------------------
     key <FK24> { [      slash,    question,       slash,     question ] };
     key <FK19> { [  backslash,         bar,    NoSymbol,   NoSymbol   ] };
     key <I168> { [        Tab,ISO_Left_Tab,       equal, ISO_Left_Tab ] };
-
-    include "level3(ralt_latch)"
-    include "ctrl(swap_lctl_lshift)"
 };
