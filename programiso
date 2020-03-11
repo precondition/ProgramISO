@@ -48,17 +48,21 @@ xkb_symbols "basic" {
     key <AC12> { [  semicolon,      colon,     NoSymbol,     NoSymbol ] };
 
     // Shift row ---------------------------------------------------------
-    // Swap the functions of the left control and the left shift
+    // ISO's "splitted" left shift now acts as 
+    // control for the left half and shift for the right half.
     replace key <LFSH> { [  Control_L ] };
     replace key <LSGT> { [  Shift_L,    Shift_L,    Shift_L,   Shift_L  ] };
     modifier_map shift { <LSGT> };
     modifier_map Control { <LFSH> };
 
-    key <AB04> { [          v,          V,  XF86AudioLowerVolume,  V ] };
+    key <AB04> { [          v,          V, XF86AudioLowerVolume,    V ] };
     key <AB08> { [      comma,       less,    braceleft,    braceleft ] };
     key <AB09> { [     period,    greater,   braceright,   braceright ] };
+    
+    // Right shift is moved closer to the fingers and,
+    // original right shift becomes a compose key.
     key <AB10> { [    Shift_R,    Shift_R,      Shift_R,      Shift_R ] };
-    key <RTSH> { type[Group1]="TWO_LEVEL", [ Multi_key, Multi_key ] };
+    key <RTSH> { type[Group1]="TWO_LEVEL",     [ Multi_key, Multi_key ] };
 
     // Space bar row -----------------------------------------------------
     // Turn the physical left control key into an additional modifier, 
@@ -74,7 +78,10 @@ xkb_symbols "basic" {
     key <SPCE> { [      space,      minus,   underscore,        space ] };
     
     // Spare keys for xcape to grab --------------------------------------
+    // For key <AB10>
     key <FK24> { [      slash,    question,       slash,     question ] };
+    // For key <LSGT>
     key <FK19> { [  backslash,         bar,    NoSymbol,   NoSymbol   ] };
+    // For key <TAB>
     key <I168> { [        Tab,ISO_Left_Tab,       equal, ISO_Left_Tab ] };
 };
