@@ -1,7 +1,8 @@
 [
   [
     {
-      "y": 1.5
+      "c": "#2e2e2e",
+      "t": "#e0e0e0"
     },
     "~\n`\nÂ\nâ",
     "!\n1\nÀ\nà",
@@ -107,7 +108,7 @@
     {
       "w": 6.25
     },
-    "- hyphen\nSpace\nSpace\n_ underscore",
+    "- hyphen -\nSpace\nSpace\n_ underscore _",
     {
       "w": 1.25
     },
