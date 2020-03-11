@@ -1,5 +1,7 @@
-partial alphanumeric_keys modifier_keys
+default partial alphanumeric_keys modifier_keys
 xkb_symbols "basic" {
+    // Using altgr-intl over basic us just in case I missed to specify 
+    // the 3rd level keysyms for a key causing AutoKey to act weird.
     include "us(altgr-intl)"
     name[Group1]= "ProgramISO";
     
@@ -14,21 +16,21 @@ xkb_symbols "basic" {
     key <AE08> { [          8,   asterisk,  ucircumflex,  Ucircumflex ] };
     key <AE09> { [          9,  parenleft,  icircumflex,  Icircumflex ] };
     key <AE10> { [          0, parenright,  ocircumflex,  Ocircumflex ] };
-    key <AE11> { [guillemotleft,   degree,    braceleft,        minus ] };
-    key <AE12> { [guillemotright,enfilledcircbullet,braceright, equal ] };
+    key <AE11> { [bracketleft,     degree,guillemotleft,        minus ] };
+    key <AE12> { [bracketright,enfilledcircbullet,guillemotright,equal] };
 
     // Tab row -----------------------------------------------------------
     key <TAB>  { [ISO_Level3_Shift,ISO_Level3_Shift,ISO_Level3_Shift,ISO_Left_Tab] };
-    key <AD01> { [          q,          Q,       exclam,     NoSymbol ] };
-    key <AD02> { [          w,          W,           at,     NoSymbol ] };
-    key <AD03> { [          e,          E,   numbersign,     NoSymbol ] };
-    key <AD04> { [          r,          R,       dollar,     NoSymbol ] };
-    key <AD05> { [          t,          T,      percent,     NoSymbol ] };
-    key <AD06> { [          y,          Y,  asciicircum,     NoSymbol ] };
-    key <AD07> { [          u,          U,    ampersand,     NoSymbol ] };
-    key <AD08> { [          i,          I,     asterisk,     NoSymbol ] };
-    key <AD09> { [          o,          O,   asciitilde,     NoSymbol ] };
-    key <AD10> { [          p,          P,         plus,     NoSymbol ] };
+    key <AD01> { [          q,          Q,       exclam,   VoidSymbol ] };
+    key <AD02> { [          w,          W,           at,   VoidSymbol ] };
+    key <AD03> { [          e,          E,   numbersign,   VoidSymbol ] };
+    key <AD04> { [          r,          R,       dollar,   VoidSymbol ] };
+    key <AD05> { [          t,          T,      percent,   VoidSymbol ] };
+    key <AD06> { [          y,          Y,  asciicircum,   VoidSymbol ] };
+    key <AD07> { [          u,          U,    ampersand,   VoidSymbol ] };
+    key <AD08> { [          i,          I,     asterisk,   VoidSymbol ] };
+    key <AD09> { [          o,          O,        equal,   VoidSymbol ] };
+    key <AD10> { [          p,          P,         plus,   VoidSymbol ] };
     key <AD11> { [  BackSpace,  BackSpace,  bracketleft,    BackSpace ] };
     key <AD12> { [     Delete,     Delete, bracketright,     NoSymbol ] };
 
@@ -45,7 +47,7 @@ xkb_symbols "basic" {
     key <AC09> { [	        l,          L,        Right,   rightarrow ] };
     key <AC10> { [  Control_R,  Control_R,    Control_R,    Control_R ] };
     key <AC11> { [ apostrophe,	 quotedbl,	      grave,        grave ]	};
-    key <AC12> { [  semicolon,      colon,     NoSymbol,     NoSymbol ] };
+    key <AC12> { [  semicolon,      colon,        grave,        grave ] };
 
     // Shift row ---------------------------------------------------------
     // ISO's "splitted" left shift now acts as 
@@ -55,7 +57,13 @@ xkb_symbols "basic" {
     modifier_map shift { <LSGT> };
     modifier_map Control { <LFSH> };
 
+    key <AB01> { [	        z,          Z,            z,            Z ]	};
+    key <AB02> { [	        x,          X,            x,            X ]	};
+    key <AB03> { [	        c,          C,            c,            C ]	};
     key <AB04> { [          v,          V, XF86AudioLowerVolume,    V ] };
+    key <AB05> { [	        b,	        B,            b,	        B ]	};
+    key <AB06> { [	        n,	        N,            n,	        N ]	};
+    key <AB07> { [	        m,	        M,            m,	        M ]	};
     key <AB08> { [      comma,       less,    braceleft,    braceleft ] };
     key <AB09> { [     period,    greater,   braceright,   braceright ] };
     
@@ -83,5 +91,5 @@ xkb_symbols "basic" {
     // For key <LSGT>
     key <FK19> { [  backslash,         bar,    NoSymbol,   NoSymbol   ] };
     // For key <TAB>
-    key <I168> { [        Tab,ISO_Left_Tab,       equal, ISO_Left_Tab ] };
+    key <I168> { [        Tab,ISO_Left_Tab,  asciitilde, ISO_Left_Tab ] };
 };
