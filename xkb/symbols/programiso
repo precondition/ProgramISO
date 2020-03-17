@@ -41,10 +41,10 @@ xkb_symbols "basic" {
     key <AC03> { [          d,          D,        Prior,        Prior ] };
     key <AC04> { [          f,          F,          End,          End ] };
     key <AC05> { [          g,          G,     XF86AudioRaiseVolume,G ] };
-    key <AC06> { [	        h,          H,         Left,    leftarrow ] };
-    key <AC07> { [	        j,          J,         Down,    downarrow ] };
-    key <AC08> { [	        k,          K,           Up,      uparrow ] };
-    key <AC09> { [	        l,          L,        Right,   rightarrow ] };
+    key <AC06> { [	        h,          H,         Left,         Left ] };
+    key <AC07> { [	        j,          J,         Down,         Down ] };
+    key <AC08> { [	        k,          K,           Up,           Up ] };
+    key <AC09> { [	        l,          L,        Right,        Right ] };
     key <AC10> { [  Control_R,  Control_R,    Control_R,    Control_R ] };
     key <AC11> { [ apostrophe,	 quotedbl,	      grave,        grave ]	};
     key <AC12> { [  semicolon,      colon,        grave,        grave ] };

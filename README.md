@@ -70,7 +70,7 @@ Level3 <kbd>D</kbd> is `Page Up` because the letter 'd' has a stem pointing *up*
 
 Level3 <kbd>G</kbd> is `Volume Up` because it's above the <kbd>V</kbd> key which is used as `Volume Down` since the letter 'v' points down.
 
-<kbd>H</kbd><kbd>J</kbd><kbd>K</kbd><kbd>L</kbd> are the Vim arrow keys and now you can use them everywhere if you are on Level3! You can also get the arrow drawings (← ↓ ↑ →) on Level4. If you use keyboard shortcuts requiring <kbd>Shift</kbd>+<kbd>Left</kbd>,<kbd>Right</kbd>,... I recommend replacing the arrow drawings on Level4.
+<kbd>H</kbd><kbd>J</kbd><kbd>K</kbd><kbd>L</kbd> are the Vim arrow keys and now you can use them everywhere if you are on Level3! It even works to select text on Level4. 
 
 The pinky's resting state can now be used to input `enter`/`return` and be used as a `control` modifier. I don't have a mnemonic for this but it's the best feature of the keyboard layout so you shouldn't have issue remembering it ;)
 
