@@ -3,7 +3,7 @@ ProgramISO is a XKB layout, inspired by [QWERkey](https://github.com/MicahElliot
 The keyboard layout is based on QWERTY-US but brings special keys (enter, control, ...) and symbols (#, %, ...) closer to the home row thanks to layers and dual-role keys.
 
 ![Preview of the ProgramISO keyboard layout on the alphanumeric block of a typical ISO keyboard in black](/pictures/keyboard-layout-alphanumeric.png)
-![Temporary legend](https://i1.wp.com/blog.simos.info/wp-content/uploads/2008/10/levels.png?ssl=1)
+![legend](/pictures/legend.png)
 
 # Brief explanation on layers and dual-role keys
 The character that gets produced on the computer not only depends on the physical key being pressed but also on the current active layer. The most familiar use of layers is that of non-shifted vs shifted. On a classic QWERTY keyboard, pressing the first key normally produces `q` but if you hold shift and press that same key, `Q` gets produced. This means that the classic QWERTY keyboard layout maps the first key to `q` when on the first layer/level and to `Q` when the second layer/level is active. As already mentioned, one way to access this second level is to hold shift but one can also use caps lock whose behaviour is different. The XKB protocol defines 3 ways to access a certain level:
@@ -25,7 +25,7 @@ You see, one of the untapped potential of switch modifiers is that they don't do
 | ; | Control | Enter | Enter | Enter | Enter |
 | Left Shift | Control | Control | Control | Control | Control |
 | \ | Shift | \ | \| | \ | \| |
-| / | Shift | × | ? | / | ? |
+| / | Shift | / | ? | / | ? |
 | Right Shift | × | Compose | Compose | Compose | Compose |
 | Left Control | Hyper | Hyper | Hyper | Hyper | Hyper |
 | Space | × | Space | - | _ | Space |
