@@ -10,6 +10,7 @@ The character that gets produced on the computer not only depends on the physica
 1. **Switch** : Level X is active as long as this switch is held. Familiar Examples: Shift, AltGr.
 2. **Lock** : Level X is activated when the lock key is pressed and remains active until the lock key is pressed again. Familiar Examples: Caps Lock, Num Lock.
 3. **Latch** : Pressing (and releasing) the latch key only applies Level X to the next pressed key before going back to default layer. Familiar Examples: Sadly none.
+
 It's rather unfortunate to observe that latching is so uncommon since [key sequences are more ergonomic than key chords](http://xahlee.info/kbd/banish_key_chords.html) and you might be glad to hear that ProgramISO does make use of latch keys but only for one modifier key while all others are switches. Why? The answer lies in dual-role keys.
 
 You see, one of the untapped potential of switch modifiers is that they don't do anything useful when they're tapped (i.e. pressed and released on its own) but thanks to programs like [xcape](https://github.com/alols/xcape), we can turn these switch modifiers into dual-role keys which act as modifiers when held but act as other keys when tapped. This allows us to make more with less.
@@ -21,7 +22,7 @@ You see, one of the untapped potential of switch modifiers is that they don't do
 | <kbd>Tab</kbd>    | Level3 Switch | Tab | Left-Tab | ~ | Tab | 
 | <kbd>[</kbd>      | × | Backspace | Backspace | [ | Backspace |
 | <kbd>]</kbd>      | × | Delete | Delete | ] | Delete |
-| <kbd>Caps</kbd> Lock | × | Escape | Escape | : | ; |
+| <kbd>Caps Lock</kbd> | × | Escape | Escape | : | ; |
 | <kbd>;</kbd> | Control | Enter | Enter | Enter | Enter |
 | <kbd>Left Shift</kbd> | Control | Control | Control | Control | Control |
 | <kbd>\\</kbd> | Shift | \ | \| | \ | \| |
@@ -87,8 +88,12 @@ Level3 <kbd><</kbd> and <kbd>></kbd> produce {curly brackets} because these keys
 #### Lowest row
 The original left control is not required anymore as ProgramISO moved it one key higher so it's been remapped to Hyper to unlock a whole new extra layer of keyboard shortcuts that won't conflict with any program's key shortcuts since they never make use of the Hyper modifier.
 
-Space bar, the most easy to reach key, is finally given a little extra work. Pressing Level2 Spacebar produces `-` because it is often used in place of spaces. Hyphen is placed on Level2 because Level2 refers to *upper*case and hyphen is positioned higher than the underscore which can be found on Level3. Underscore is placed on Level3 spacebar because it is also frequently used as pseudo-spaces. It is important that underscore is easier to type than hyphen because, as it turns out, underscore is the most commonly used symbol in many programming languages. 
+<kbd>Spacebar</kbd>, the most easy to reach key, is finally given a little extra work. Pressing Level2 <kbd>Spacebar</kbd> produces `-` because it is often used in place of spaces. Hyphen is placed on Level2 because Level2 refers to *upper*case and hyphen is positioned higher than the underscore which can be found on Level3. Underscore is placed on Level3 <kbd>spacebar</kbd> because it is also frequently used as pseudo-spaces. It is important that underscore is easier to type than hyphen because, as it turns out, underscore is the most commonly used symbol in many programming languages. 
 
 ![Punctuations frequency in all languages](http://xahlee.info/comp/i/computer_language_char_frequency.png)
 
-ProgramISO makes it very easy to use your two strongest fingers (i.e. the thumbs) to input `_`. Simply press or hold AltGr with your right thumb and press the spacebar with the left thumb.
+ProgramISO makes it very easy to use your two strongest fingers (i.e. the thumbs) to input `_`. Simply press or hold <kbd>AltGr</kbd> with your right thumb and press the <kbd>spacebar</kbd> with the left thumb.
+
+## Breaking Changes from QWERTY
+ProgramISO tries to deviate minimally from classic QWERTY-US and, generally, merely adds more functionality to each key without altering its classic behaviour but there are still some breaking changes being introduced (for the better). The keys that got radically changed are highlighted in red in this picture:
+![Highlighting of the breaking changes in red](/pictures/keyboard-layout-breaking-changes.png)
