@@ -2,7 +2,7 @@
 ProgramISO is a XKB layout, inspired by [QWERkey](https://github.com/MicahElliott/QWERkey/), designed specifically for programming on an ISO 105-keys keyboard with minimized reach.
 The keyboard layout is based on QWERTY-US but brings special keys (enter, control, ...) and symbols (#, %, ...) closer to the home row thanks to layers and dual-role keys.
 
-![Preview of the ProgramISO keyboard layout on the alphanumeric block of a typical ISO keyboard in black](pictures/keyboard-layout-alphanumeric.png)
+![Preview of the ProgramISO keyboard layout on the alphanumeric block of a typical ISO keyboard in black](/pictures/keyboard-layout-alphanumeric.png)
 ![Temporary legend](https://i1.wp.com/blog.simos.info/wp-content/uploads/2008/10/levels.png?ssl=1)
 
 # Brief explanation on layers and dual-role keys
@@ -19,16 +19,16 @@ You see, one of the untapped potential of switch modifiers is that they don't do
 | QWERTY | Hold | Level 1 | Level 2 | Level 3 | Level 4 |
 |--------|:----:|---------|---------|---------|---------|
 | Tab    | Level3 Switch | Tab | Left-Tab | ~ | Tab | 
-| [      | / | Backspace | Backspace | [ | Backspace |
-| ]      | / | Delete | Delete | ] | Delete |
-| Caps Lock | Escape | Escape | : | ; |
+| [      | × | Backspace | Backspace | [ | Backspace |
+| ]      | × | Delete | Delete | ] | Delete |
+| Caps Lock | × | Escape | Escape | : | ; |
 | ; | Control | Enter | Enter | Enter | Enter |
-| Left Shift | Control | Control | Control | Control | 
+| Left Shift | Control | Control | Control | Control | Control |
 | \ | Shift | \ | \| | \ | \| |
-| / | Shift | / | ? | / | ? |
-| Right Shift | / | Compose | Compose | Compose | Compose |
-| Left Control | Hyper | Hyper | Hyper | Hyper | 
-| Space | / | Space | - | _ | Space |
+| / | Shift | × | ? | / | ? |
+| Right Shift | × | Compose | Compose | Compose | Compose |
+| Left Control | Hyper | Hyper | Hyper | Hyper | Hyper |
+| Space | × | Space | - | _ | Space |
 | AltGr | Level3 Switch | Level3 Latch | Level3 Latch | Level3 Latch | Level3 Latch |
 
 # Design Philosophy & Mnemonics
