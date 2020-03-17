@@ -1,0 +1,12 @@
+    <layout>
+      <configItem>
+        <name>programiso</name>
+
+        <shortDescription>ProgramISO</shortDescription>
+        <description>ProgramISO</description>
+        <languageList>
+          <iso639Id>mul</iso639Id>
+        </languageList>
+      </configItem>
+      <variantList/>
+    </layout>
