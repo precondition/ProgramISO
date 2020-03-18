@@ -37,8 +37,8 @@
     "I\n\n\n*",
     "O\n\n\n=",
     "P\n\n\n+",
-    "⌫\n\n\n[",
-    "⌦\n\n\n]",
+    "⌫\n\n\nVoid",
+    "⌦\n\n\nVoid",
     {
       "x": 0.25,
       "w": 1.25,
@@ -63,7 +63,7 @@
     "J\n\n\n↓",
     "K\n\n\n↑",
     "L\n\n\n→",
-    "Enter\n\n\n\n\n\n\n\n\nCtrl",
+    "Enter\n\n\n;\n\n\n\n\n\nCtrl",
     "\"\n'\n\n`",
     {
       "f": 4
@@ -82,10 +82,10 @@
     "C",
     "V\n\n\n🔉",
     "B",
-    "N",
-    "M",
-    "<\n,\n\n\n\n\n\n\n\n\n{",
-    ">\n.\n\n\n\n\n\n\n\n\n}",
+    "N\n\n\n[",
+    "M\n\n\n]",
+    "<\n,\n\n{",
+    ">\n.\n\n}",
     "?\n/\n\n\n\n\n\n\n\nShift",
     {
       "w": 2.75

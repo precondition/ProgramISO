@@ -31,8 +31,8 @@ xkb_symbols "basic" {
     key <AD08> { [          i,          I,     asterisk,   VoidSymbol ] };
     key <AD09> { [          o,          O,        equal,   VoidSymbol ] };
     key <AD10> { [          p,          P,         plus,   VoidSymbol ] };
-    key <AD11> { [  BackSpace,  BackSpace,  bracketleft,    BackSpace ] };
-    key <AD12> { [     Delete,     Delete, bracketright,     NoSymbol ] };
+    key <AD11> { [  BackSpace,  BackSpace,   VoidSymbol,    BackSpace ] };
+    key <AD12> { [     Delete,     Delete,   VoidSymbol,       Delete ] };
 
     // Caps Lock row -----------------------------------------------------                        
     key <CAPS> { [     Escape,     Escape,        colon,    semicolon ] };
@@ -62,8 +62,8 @@ xkb_symbols "basic" {
     key <AB03> { [	        c,          C,            c,            C ]	};
     key <AB04> { [          v,          V, XF86AudioLowerVolume,    V ] };
     key <AB05> { [	        b,	        B,            b,	        B ]	};
-    key <AB06> { [	        n,	        N,            n,	        N ]	};
-    key <AB07> { [	        m,	        M,            m,	        M ]	};
+    key <AB06> { [	        n,	        N,  bracketleft,	        N ]	};
+    key <AB07> { [	        m,	        M, bracketright,	        M ]	};
     key <AB08> { [      comma,       less,    braceleft,    braceleft ] };
     key <AB09> { [     period,    greater,   braceright,   braceright ] };
     
@@ -92,4 +92,6 @@ xkb_symbols "basic" {
     key <FK19> { [  backslash,         bar,    NoSymbol,   NoSymbol   ] };
     // For key <TAB>
     key <I168> { [        Tab,ISO_Left_Tab,  asciitilde, ISO_Left_Tab ] };
+    // For key <AC10>
+    key <RTRN> { [ Return,  Return,     semicolon,  Return		]	};
 };

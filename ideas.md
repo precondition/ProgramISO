@@ -7,3 +7,4 @@
 * Level3 M-Enter-Ctrl key could hold ;
 * Possibly add a numpad centered on 'K' on a layer? This would require a switch because latch would be too impractical for entering digit**s**. A lock could be considered but I believe it would be overkill to use a lock just for numbers.
 * [This project](https://gitlab.com/wsha/chorded_keymap) is an interesting concept. Not sure if it's feasible with xcape but using <kbd>F</kbd> and <kbd>S</kbd> as the chord has some potential (It's better than the default <kbd>D</kbd> and <kbd>S</kbd>, which frequently come together: e.g. "towar**ds**", ...)
+* Remap <kbd>Menu</kbd> or <kbd>L-Ctrl</kbd> to be a combination of modifiers (e.g. Ctrl+Shift or Ctrl+Level3) in an effort to reduce finger gymnastics.

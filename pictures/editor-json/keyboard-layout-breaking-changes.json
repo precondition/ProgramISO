@@ -44,8 +44,8 @@
     {
       "c": "#a11010"
     },
-    "⌫\n\n\n[",
-    "⌦\n\n\n]",
+    "⌫\n\n\nVoid",
+    "⌦\n\n\nVoid",
     {
       "x": 0.25,
       "c": "#2e2e2e",
@@ -78,7 +78,7 @@
     {
       "c": "#a11010"
     },
-    "Enter\n\n\n\n\n\n\n\n\nCtrl",
+    "Enter\n\n\n;\n\n\n\n\n\nCtrl",
     {
       "c": "#2e2e2e"
     },
@@ -104,10 +104,10 @@
     "C",
     "V\n\n\n🔉",
     "B",
-    "N",
-    "M",
-    "<\n,\n\n\n\n\n\n\n\n\n{",
-    ">\n.\n\n\n\n\n\n\n\n\n}",
+    "N\n\n\n[",
+    "M\n\n\n]",
+    "<\n,\n\n{",
+    ">\n.\n\n}",
     "?\n/\n\n\n\n\n\n\n\nShift",
     {
       "c": "#a11010",
