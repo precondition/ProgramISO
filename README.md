@@ -20,8 +20,8 @@ You see, one of the untapped potential of switch modifiers is that they don't do
 | QWERTY | Hold | Level 1 | Level 2 | Level 3 | Level 4 |
 |--------|:----:|---------|---------|---------|---------|
 | <kbd>Tab</kbd>    | Level3 Switch | Tab | Left-Tab | ~ | Tab | 
-| <kbd>[</kbd>      | × | Backspace | Backspace | [ | Backspace |
-| <kbd>]</kbd>      | × | Delete | Delete | ] | Delete |
+| <kbd>[</kbd>      | × | Backspace | Backspace | Void | Backspace |
+| <kbd>]</kbd>      | × | Delete | Delete | Void | Delete |
 | <kbd>Caps Lock</kbd> | × | Escape | Escape | : | ; |
 | <kbd>;</kbd> | Control | Enter | Enter | Enter | Enter |
 | <kbd>Left Shift</kbd> | Control | Control | Control | Control | Control |
@@ -57,7 +57,7 @@ All symbols from the tilde key to the <kbd>8</kbd> key are translated one key do
 
 QWERTY's <kbd>=</kbd>/<kbd>+</kbd> key gets spread out over Level3 <kbd>O</kbd> and Level3 <kbd>P</kbd> (for **P**lus) which helps to keep them close to each other.
 
-The bracket keys still keep the square brackets on Level3 but become backspace and delete on Level1 and Level2. You can see it as the backspace staying in the same corner but closer to the home row with the left half used for deleting characters to the left and the right half for deleting characters to the right.
+The bracket keys become backspace and delete on Level1 and Level2. You can see it as the backspace staying in the same corner but closer to the home row with the left half used for deleting characters to the left and the right half for deleting characters to the right. The `Void` on Level3 of these keys is useful to cancel a latch such as the one on <kbd>AltGr</kbd>. Thus, if you realize that you didn't actually need to access Level 3, you can hit backspace or delete.
 
 #### Home row
 <kbd>Caps Lock</kbd> essentially becomes the Vim key. It's an escape key which can also produce colon (very handy for quickly entering Ex mode from insert mode). The added semicolon on Level4 is simply to stay faithful to the QWERTY layout, the semicolon on Level1 of the rightmost key of the home row is personally more convenient for me. People commonly turn <kbd>Caps Lock</kbd> into a dual-role key for both `Control` and `Escape` but this is annoying if you quickly change modes in Vim. When I experimented with this, I kept accidently hitting <C-some_key> when I just wanted to quickly go back to Normal mode and use normal mode commands.
@@ -82,6 +82,8 @@ In C-like languages, there is often a semicolon at the far-right of a line. Such
 Both shifts are moved one key closer, firstly because they're used a lot and secondly because it allows us to move other modifiers closer to the home row. This is where we'll be able to take profit of the ISO keyboard layout. As opposed to an ANSI or a JIS keyboard layout, the ISO keyboard layout, common in Europe, has a shorter left shift key to accommodate the extra key. Normally, this kinda sucks because it requires extra stretch for the pinky to reach a very commonly used modifier. However, if we remap the extra key to `shift` (that extra key was redundant anyways, it's useful for some national European layouts but not on QWERTY-US), we can remap the original left shift to `control`. This is fantastic because `control`, `shift`, `z`, `x`, `c`, and `v` are now all on one neat row! No need to rotate the wrists in order to use these very common key shortcuts now. Additionally, ProgramISO's right shift is vertically aligned with ProgramISO's right control (which doubles as the enter key), meaning you can form a guitar-like pinky barré to hit both control and shift with one single finger without leaving the home row!
 
 Level3 <kbd>V</kbd> is for **V**olume Down because it is the first letter of volume and looks like a down arrow.
+
+Level3 <kbd>N</kbd> and <kbd>M</kbd> can be used to produce square brackets because rotating 'n' 90° to the left makes it look like '\[' and rotating 'm' 90° to the right makes it look like '~~]~~'.
 
 Level3 <kbd><</kbd> and <kbd>></kbd> produce {curly brackets} because these keys are aligned with the <kbd>9</kbd>/<kbd>(</kbd> and <kbd>0</kbd>/<kbd>)</kbd> keys and if you do the fusion: `(` + `<` = `{` and `)` + `>` = `}`.
 
