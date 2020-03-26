@@ -14,6 +14,7 @@
 * I don't use PgUp and PgDn a lot and yet they occupy the home row. <kbd>S</kbd> and <kbd>D</kbd> could instead yield openers and closers (i.e. parens and brackets) on certain layers
 * If numpad is centered on <kbd>K</kbd>, <kbd>AltGr</kbd> could be used as `0`. (The spacebar could also be used but that's a bad candidate because I might need to input spaces between triplets of digits)
 * Remap <kbd>Spacebar</kbd> to be a Level Y switch on a certain level X which can be accessed with a Level X latch. As such I can dual-role all modifiers of the bottom row into latches which I can combo with non repeated keysyms or combo with space as a switch + repeated keysym. By combining lvlX latch and lvlY switch on space, this makes it easier to access lvls >5.
+* Use DreyMar's xkb colemak files as a new basis for ProgramISO, adding, editing and removing as necessary. The idea isn't to take keyboard layout inspiration from dreymar's colemak but to fetch the magic bits that give dreymar's colemak superpowers
 
 # Interesting resources
 * There are so many obscure things that are possible with xkb like those briefly mentionned in this article : https://medium.com/@benreaves/keybinding-in-groups-for-linux-938f379648cb but I can't seem to find documentation which lists and explains all those options. [This man page](https://www.systutorials.com/docs/linux/man/3-XkbKeyTypesForCoreSymbols/) is a good start.
