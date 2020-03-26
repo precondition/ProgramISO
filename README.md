@@ -1,5 +1,5 @@
 # ProgramISO
-ProgramISO is a XKB layout, inspired by [QWERkey](https://github.com/MicahElliott/QWERkey/), designed specifically for programming on an ISO 105-keys keyboard with minimized reach.
+ProgramISO is a XKB layout, inspired by [QWERkey](https://github.com/MicahElliott/QWERkey/), designed specifically for programming (with Vim) on an ISO 105-keys keyboard with minimized reach.
 The keyboard layout is based on QWERTY-US but brings special keys (enter, control, ...) and symbols (#, %, ...) closer to the home row thanks to layers and dual-role keys.
 
 ![Preview of the ProgramISO keyboard layout on the alphanumeric block of a typical ISO keyboard in black](/pictures/keyboard-layout-alphanumeric.png)

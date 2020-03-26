@@ -15,12 +15,22 @@
     * Numbers are often used for indexing so it would be a good idea to add a colon at its classic QWERTY position on the numpad layer. For the same reasons, adding square brackets on e.g.<kbd>P</kbd> and<kbd>/</kbd> could also prove to be useful.
 * xcape can also be used to dual-role a level X switch and a level Y latch on the same key
 * I don't use PgUp and PgDn a lot and yet they occupy the home row. <kbd>S</kbd> and <kbd>D</kbd> could instead yield openers and closers (i.e. parens and brackets) on certain layers
-* If numpad is centered on <kbd>K</kbd>, <kbd>AltGr</kbd> could be used as `0`. (The spacebar could also be used but that's a bad candidate because I might need to input spaces between triplets of digits)
-* Remap <kbd>Spacebar</kbd> to be a Level Y switch on a certain level X which can be accessed with a Level X latch. As such I can dual-role all modifiers of the bottom row into latches which I can combo with non repeated keysyms or combo with space as a switch + repeated keysym. By combining lvlX latch and lvlY switch on space, this makes it easier to access lvls >5.
-* A better analysis of keysyms that are used continuously (e.g. obvious ones like `Left` but also less obvious ones like `{` stemming from my use of vim) and keysyms that don't get repeated (e.g. accented characters, `âscîîcîrcum`, `$`, ...) is needeed in order to better understand what keysyms would benefit from *switches* and add non-repeated keysyms on a layer that is accessed with a *latch*.
-* Use DreyMar's xkb colemak files as a new basis for ProgramISO, adding, editing and removing as necessary. The idea isn't to take keyboard layout inspiration from dreymar's colemak but to fetch the magic bits that give dreymar's colemak superpowers
 * Move accents away from Level 3 number row and add square brackets `[]` on level 3 of <kbd>9(</kbd> and <kbd>0)</kbd>
 * Shift+Escape i.e. Level 2 <kbd>Caps Lock</kbd> is hardly used. It could be replaced with something more useful like a latch or something. The colon is very convenient at Level3 since it can be accessed with a pinky barré between <kbd>Tab</kbd> and <kbd>Caps Lock</kbd>.
+* Remap <kbd>Spacebar</kbd> to be a Level Y switch on a certain level X which can be accessed with a Level X latch. As such I can dual-role all modifiers of the bottom row into latches which I can combo with non repeated keysyms or combo with space as a switch + repeated keysym. By combining lvlX latch and lvlY switch on space, this makes it easier to access lvls >5.
+* A better analysis of keysyms that are used continuously (e.g. obvious ones like `Left` but also less obvious ones like `{` stemming from my use of vim) and keysyms that don't get repeated (e.g. accented characters, `âscîîcîrcum`, `$`, ...) is needeed in order to better understand what keysyms would benefit from *switches* and add non-repeated keysyms on a layer that is accessed with a *latch*.
+
+| Keysyms non-repeated | Keysyms repeated 2-3 times | Keysyms repeated >3 times |
+|:--------------------:|:--------------------------:|:-------------------------:|
+| ~ accents ! @ # $ %  | ` @ ! # & * = + / { } < >  | Tab Bckspce Del PgUp PgDn |
+| ^ ( ) [ ] ° « • »    | - _ [1;9] "                | VolUp VolDn Left Down Up  |
+| Home End ; ' : | \ , |                            | Right 0                   |
+| Compose Enter Escape |                            |                           |
+| Menu Insert PrtSc    |                            |                           |
+| ScrLk F[1;12]        |                            |                           |
+
+* Use DreymaR's xkb colemak files as a new basis for ProgramISO, adding, editing and removing as necessary. The idea isn't to take keyboard layout inspiration from dreymar's colemak but to fetch the magic bits that give dreymar's colemak superpowers
+* Create a navigation layer where <kbd>H</kbd><kbd>J</kbd><kbd>K</kbd><kbd>L</kbd> are normal cursor movements like in Vim but the keys above (<kbd>Y</kbd><kbd>U</kbd><kbd>I</kbd><kbd>O</kbd>) are Ctrl+Mvmnt and keys below (<kbd>N</kbd><kbd>M</kbd><kbd>\<</kbd><kbd>\></kbd>) are Shift+Mvmnt. Something similar can be made for the left hand in regards to `Home`, `PgDn`, `PgUp`, and `End`.
 
 
 # Interesting resources
