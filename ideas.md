@@ -5,15 +5,20 @@
 * Variant where the first 2 levels of the number row are reversed (Afterthought: The number row is notoriously hard to touch type on. Adding the frequently used symbols on the upper row but on a layer still is more convenient than being able to access the symbols on Level 1 of the number row)
 * Variant(?) with a 5th level set as a Latch on <kbd>R-Shift</kbd> key to access accented characters like on my old unreleased prototype kb layouts. (Physical <kbd>Ctrl</kbd> key(s) can be used to regain lost compose key. Same can be said for the menu key)
 * ~~Level3 M-Enter-Ctrl key could hold ;~~ **Added to ProgramISO**
-* Possibly add a numpad centered on 'K' on a layer? This would require a switch because latch would be too impractical for entering digit**s**. A lock could be considered but I believe it would be overkill to use a lock just for numbers.
 * Remap <kbd>Menu</kbd> or <kbd>L-Ctrl</kbd> to be a combination of modifiers (e.g. Ctrl+Shift or Ctrl+Level3) in an effort to reduce finger gymnastics.
 * Opening a new branch for more extreme modifications, where minimizing deviations from stock QWERTY is no longer a preoccupation
-* If we assume that a numpad layer is added, we can turn level1 number row into a bunch of level/layers latches
+* **Numpad**
+    * Possibly add a numpad centered on 'K' on a layer? This would require a switch because latch would be too impractical for entering digit**s**. A lock could be considered but I believe it would be overkill to use a lock just for numbers.
+    * If we assume that a numpad layer is added, we can turn level1 number row into a bunch of level/layers latches
+    * If numpad is centered on <kbd>K</kbd>, <kbd>AltGr</kbd> could be used as `0`. (The spacebar could also be used but that's a bad candidate because I might need to input spaces between triplets of digits)
+    * Centering the numpad on <kbd>I</kbd> instead could also be interesting. Why? Familiarity. 7, 8, 9 do not move and neither do the comma and the dot which are often used in number entry. If numpad is centered on K, commas and dots will be harder to input.
+    * Numbers are often used for indexing so it would be a good idea to add a colon at its classic QWERTY position on the numpad layer. For the same reasons, adding square brackets on e.g.<kbd>P</kbd> and<kbd>/</kbd> could also prove to be useful.
 * A better analysis of keysyms that are used continuously (e.g. obvious ones like `Left` but also less obvious ones like `{` stemming from my use of vim) and keysyms that don't get repeated (e.g. accented characters, `âscîîcîrcum`, `$`, ...) is needeed in order to better understand what keysyms would benefit from *switches* and add non-repeated keysyms on a layer that is accessed with a *latch*.
 * xcape can also be used to dual-role a level X switch and a level Y latch on the same key
 * I don't use PgUp and PgDn a lot and yet they occupy the home row. <kbd>S</kbd> and <kbd>D</kbd> could instead yield openers and closers (i.e. parens and brackets) on certain layers
-* If numpad is centered on <kbd>K</kbd>, <kbd>AltGr</kbd> could be used as `0`. (The spacebar could also be used but that's a bad candidate because I might need to input spaces between triplets of digits)
-* Remap <kbd>Spacebar</kbd> to be a Level Y switch on a certain level X which can be accessed with a Level X latch. As such I can dual-role all modifiers of the bottom row into latches which I can combo with non repeated keysyms or combo with space as a switch + repeated keysym. By combining lvlX latch and lvlY switch on space, this makes it easier to access lvls >5.
+* Remap <kbd>Spacebar</kbd> to be a Level Y switch on a certain level X which can be accessed with a Level X latch. As such I can dual-role all modifiers of the bottom row into latches which I can combo with non repeated keysyms or combo with space as a switch + repeated keysym. By combining lvlX latch and lvlY switch on space, this makes it easier to access lvls >5. This gets us closer to a pseudo-thumb cluster on a PC105 keyboard.
+* Move accents away from Level 3 number row and add square brackets `[]` on level 3 of <kbd>9(</kbd> and <kbd>0)</kbd>
+* Shift+Escape i.e. Level 2 <kbd>Caps Lock</kbd> is hardly used. It could be replaced with something more useful like a latch or something. The colon is very convenient at Level3 since it can be accessed with a pinky barré between <kbd>Tab</kbd> and <kbd>Caps Lock</kbd>.
 
 # Interesting resources
 * There are so many obscure things that are possible with xkb like those briefly mentionned in this article : https://medium.com/@benreaves/keybinding-in-groups-for-linux-938f379648cb but I can't seem to find documentation which lists and explains all those options. [This man page](https://www.systutorials.com/docs/linux/man/3-XkbKeyTypesForCoreSymbols/) is a good start.
