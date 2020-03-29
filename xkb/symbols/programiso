@@ -6,9 +6,9 @@ xkb_symbols "basic" {
     name[Group1]= "ProgramISO";
     
     // Numbers/Backspace row ---------------------------------------------
-    key <TLDE> { [      grave, asciitilde,  acircumflex,  Acircumflex ] };
-    replace key <AE01> { [ Hyper_L ] };
-    modifier_map Mod3 { <AE01> };
+    replace key <TLDE> { [ Hyper_L ] };
+    modifier_map Mod3 { <TLDE> };
+    key <AE01> { [          1,     exclam,       agrave,       Agrave ] };
     key <AE02> { [          2,         at,       eacute,       Eacute ] };
     key <AE03> { [          3, numbersign,       egrave,       Egrave ] };
     key <AE04> { [          4,     dollar,  ecircumflex,  Ecircumflex ] };
@@ -88,8 +88,8 @@ xkb_symbols "basic" {
     key <SPCE> { [      space,      minus,   underscore,        space ] };
     
     // Spare keys for xcape to grab --------------------------------------
-    // For key <AE01>
-    key <I221> { [          1,     exclam,       agrave,       Agrave ] };
+    // For key <TLDE>
+    key <I221> { [      grave, asciitilde,  acircumflex,  Acircumflex ] };
     // For key <AE11>
     key <I247> { [bracketleft,     degree,guillemotleft,        minus ] };
     // For key <AB10>
