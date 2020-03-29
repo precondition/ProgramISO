@@ -7,7 +7,8 @@ xkb_symbols "basic" {
     
     // Numbers/Backspace row ---------------------------------------------
     key <TLDE> { [      grave, asciitilde,  acircumflex,  Acircumflex ] };
-    key <AE01> { [          1,     exclam,       agrave,       Agrave ] };
+    replace key <AE01> { [ Hyper_L ] };
+    modifier_map Mod3 { <AE01> };
     key <AE02> { [          2,         at,       eacute,       Eacute ] };
     key <AE03> { [          3, numbersign,       egrave,       Egrave ] };
     key <AE04> { [          4,     dollar,  ecircumflex,  Ecircumflex ] };
@@ -16,7 +17,8 @@ xkb_symbols "basic" {
     key <AE08> { [          8,   asterisk,  ucircumflex,  Ucircumflex ] };
     key <AE09> { [          9,  parenleft,  icircumflex,  Icircumflex ] };
     key <AE10> { [          0, parenright,  ocircumflex,  Ocircumflex ] };
-    key <AE11> { [bracketleft,     degree,guillemotleft,        minus ] };
+    replace key <AE11> { [ Hyper_R ] };
+    modifier_map Mod3 { <AE11> };
     key <AE12> { [bracketright,enfilledcircbullet,guillemotright,equal] };
 
     // Tab row -----------------------------------------------------------
@@ -32,7 +34,7 @@ xkb_symbols "basic" {
     key <AD09> { [          o,          O,        equal,   VoidSymbol ] };
     key <AD10> { [          p,          P,         plus,   VoidSymbol ] };
     key <AD11> { [  BackSpace,  BackSpace,   VoidSymbol,    BackSpace ] };
-    key <AD12> { [     Delete,     Delete,   VoidSymbol,       Delete ] };
+    key <AD12> { [     Delete,     Delete,       Insert,       Insert ] };
 
     // Caps Lock row -----------------------------------------------------                        
     key <CAPS> { [     Escape,     Escape,        colon,    semicolon ] };
@@ -86,6 +88,10 @@ xkb_symbols "basic" {
     key <SPCE> { [      space,      minus,   underscore,        space ] };
     
     // Spare keys for xcape to grab --------------------------------------
+    // For key <AE01>
+    key <I221> { [          1,     exclam,       agrave,       Agrave ] };
+    // For key <AE11>
+    key <I247> { [bracketleft,     degree,guillemotleft,        minus ] };
     // For key <AB10>
     key <FK24> { [      slash,    question,       slash,     question ] };
     // For key <LSGT>
