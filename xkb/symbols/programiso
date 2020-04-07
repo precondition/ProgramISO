@@ -6,7 +6,8 @@ xkb_symbols "basic" {
     name[Group1]= "ProgramISO";
     
     // Numbers/Backspace row ---------------------------------------------
-    key <TLDE> { [      grave, asciitilde,  acircumflex,  Acircumflex ] };
+    //key <TLDE> { [      grave, asciitilde,  acircumflex,  Acircumflex ] };
+    key <TLDE> { type[Group1]="ONE_LEVEL", symbols[Group1] = [ Control_L ] };
     key <AE01> { [          1,     exclam,       agrave,       Agrave ] };
     key <AE02> { [          2,         at,       eacute,       Eacute ] };
     key <AE03> { [          3, numbersign,       egrave,       Egrave ] };
@@ -82,6 +83,7 @@ xkb_symbols "basic" {
     // original right shift becomes a compose key.
     key <AB10> { [    Shift_R,    Shift_R,      Shift_R,      Shift_R ] };
     key <RTSH> { type[Group1]="TWO_LEVEL",     [ ISO_Level5_Latch, ISO_Level5_Latch ] };
+    modifier_map mod3 { <RTSH> };
 
     // Space bar row -----------------------------------------------------
     // AltGr (or right Alt) temporarily switches to level 3 for the next key.

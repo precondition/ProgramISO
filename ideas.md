@@ -31,7 +31,8 @@
 
 * Use DreymaR's xkb colemak files as a new basis for ProgramISO, adding, editing and removing as necessary. The idea isn't to take keyboard layout inspiration from dreymar's colemak but to fetch the magic bits that give dreymar's colemak superpowers
 * Create a navigation layer where <kbd>H</kbd><kbd>J</kbd><kbd>K</kbd><kbd>L</kbd> are normal cursor movements like in Vim but the keys above (<kbd>Y</kbd><kbd>U</kbd><kbd>I</kbd><kbd>O</kbd>) are Ctrl+Mvmnt and keys below (<kbd>N</kbd><kbd>M</kbd><kbd>\<</kbd><kbd>\></kbd>) are Shift+Mvmnt. Something similar can be made for the left hand in regards to `Home`, `PgDn`, `PgUp`, and `End`.
-* Assign bigrams and trigrams to keys or key combos, possibly with the use of an Hyper key on <kbd>Ctl_L</kbd> (Stock QWERTY position) or as a dual-role on a number row key.
+* ~~Assign bigrams and trigrams to keys or key combos, possibly with the use of an Hyper key on <kbd>Ctl_L</kbd> (Stock QWERTY position) or as a dual-role on a number row key.~~ ~~Added to ProgramISO on the number row because the lower corners of the keyboards are harder to reach than the upper corners~~ Removed in favor of the next idea
+    * Chording is hard. Alternatively I could set a very uncommon symbol at level1 of a key and use text expansion software such as Autokey to expand {weird symbol}{letter} and {letter}{weird symbol}
 
 
 # Interesting resources
@@ -42,3 +43,4 @@
 * https://hack.org/mc/writings/xkb.html
 * https://github.com/xkbcommon/libxkbcommon
 * https://github.com/DreymaR/BigBagKbdTrixXKB/ : This one is of particular interest since it also uses XKB for advanced layer configuration
+* [KMonad is a keyboard remapping utility written to provide functionality that aligns with that provided by the amazing QMK firmware.](https://github.com/david-janssen/kmonad)
