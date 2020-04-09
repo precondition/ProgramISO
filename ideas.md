@@ -13,6 +13,7 @@
     * If numpad is centered on <kbd>K</kbd>, <kbd>AltGr</kbd> could be used as `0`. (The spacebar could also be used but that's a bad candidate because I might need to input spaces between triplets of digits)
     * Centering the numpad on <kbd>I</kbd> instead could also be interesting. Why? Familiarity. 7, 8, 9 do not move and neither do the comma and the dot which are often used in number entry. If numpad is centered on K, commas and dots will be harder to input.
     * Numbers are often used for indexing so it would be a good idea to add a colon at its classic QWERTY position on the numpad layer. For the same reasons, adding square brackets on e.g.<kbd>P</kbd> and<kbd>/</kbd> could also prove to be useful.
+    * Access numpad layer (possibly use Mode_switch since we're kinda running out of layers on the ProgramISO layout) with <kbd>LCTL</kbd> and use the rightmost home row key as Compose.
 * xcape can also be used to dual-role a level X switch and a level Y latch on the same key
 * I don't use PgUp and PgDn a lot and yet they occupy the home row. <kbd>S</kbd> and <kbd>D</kbd> could instead yield openers and closers (i.e. parens and brackets) on certain layers
 * Move accents away from Level 3 number row and add square brackets `[]` on level 3 of <kbd>9(</kbd> and <kbd>0)</kbd>
@@ -33,6 +34,8 @@
 * Create a navigation layer where <kbd>H</kbd><kbd>J</kbd><kbd>K</kbd><kbd>L</kbd> are normal cursor movements like in Vim but the keys above (<kbd>Y</kbd><kbd>U</kbd><kbd>I</kbd><kbd>O</kbd>) are Ctrl+Mvmnt and keys below (<kbd>N</kbd><kbd>M</kbd><kbd>\<</kbd><kbd>\></kbd>) are Shift+Mvmnt. Something similar can be made for the left hand in regards to `Home`, `PgDn`, `PgUp`, and `End`.
 * ~~Assign bigrams and trigrams to keys or key combos, possibly with the use of an Hyper key on <kbd>Ctl_L</kbd> (Stock QWERTY position) or as a dual-role on a number row key.~~ ~~Added to ProgramISO on the number row because the lower corners of the keyboards are harder to reach than the upper corners~~ Removed in favor of the next idea
     * Chording is hard. Alternatively I could set a very uncommon symbol at level1 of a key and use text expansion software such as Autokey to expand {weird symbol}{letter} and {letter}{weird symbol}
+* Mod tap the Level 2 of the spacebar.
+* There are way too many ways to enter `[]`. I should remove some.
 
 
 # Interesting resources
@@ -44,3 +47,4 @@
 * https://github.com/xkbcommon/libxkbcommon
 * https://github.com/DreymaR/BigBagKbdTrixXKB/ : This one is of particular interest since it also uses XKB for advanced layer configuration
 * [KMonad is a keyboard remapping utility written to provide functionality that aligns with that provided by the amazing QMK firmware.](https://github.com/david-janssen/kmonad)
+* [This reddit post](https://www.reddit.com/r/MechanicalKeyboards/comments/fwu1tc/this_is_my_southpaw_corsair_seaform_a_k70_mk1/) contains a gif of pinky-barré.

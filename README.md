@@ -9,7 +9,7 @@ The keyboard layout is based on QWERTY-US but brings special keys (enter, contro
 The character that gets produced on the computer not only depends on the physical key being pressed but also on the current active layer. The most familiar use of layers is that of non-shifted vs shifted. On a classic QWERTY keyboard, pressing the first key normally produces `q` but if you hold shift and press that same key, `Q` gets produced. This means that the classic QWERTY keyboard layout maps the first key to `q` when on the first layer/level and to `Q` when the second layer/level is active. As already mentioned, one way to access this second level is to hold shift but one can also use caps lock whose behaviour is different. The XKB protocol defines 3 ways to access a certain level:
 1. **Switch** : Level X is active as long as this switch is held. Familiar Examples: Shift, AltGr.
 2. **Lock** : Level X is activated when the lock key is pressed and remains active until the lock key is pressed again. Familiar Examples: Caps Lock, Num Lock.
-3. **Latch** : Pressing (and releasing) the latch key only applies Level X to the next pressed key before going back to default layer. Familiar Examples: Sadly none.
+3. **Latch** : Pressing (and releasing) the latch key only applies Level X to the next pressed key before going back to default layer. Familiar Examples: Shift key on smartphones.
 
 It's rather unfortunate to observe that latching is so uncommon since [key sequences are more ergonomic than key chords](http://xahlee.info/kbd/banish_key_chords.html) and you might be glad to hear that ProgramISO does make use of latch keys but only for one modifier key while all others are switches. Why? The answer lies in dual-role keys.
 
@@ -35,6 +35,7 @@ You see, one of the untapped potential of switch modifiers is that they don't do
 ## Design Philosophy & Mnemonics
 #### Number row
 If you use an ISO keyboard, that's probably because you live in Europe and if that's the case, chances are also high that you need to input accented characters. Using the compose key for each accented character gets annoying if your language uses accents a lot. I speak French so I added french accented characters on Level3 of the number row, in a fashion that is lightly inspired by classic French and Belgian keyboard layouts.
+PS: French accents have been moved to Level5 (and Level6 for uppercase accented letters). The accents on the number row are redundant and less comfortable to use.
 
 The two leftmost keys on the number row hold `â` and `à` because the normal letter `A` is also the leftmost on the home row (it is also the leftmost in AZERTY). The tilde key is somewhat hard to reach but still feasible so I've placed the uncommon `â` there while `à` is much more commonly used so it is placed on the easier to reach <kbd>1</kbd> key.
 
@@ -46,9 +47,9 @@ Key <kbd>6</kbd> is a pain to reach so I did not add any accented characters the
 
 Keys <kbd>7</kbd> and key <kbd>8</kbd> are both adjacent to the normal letter <kbd>U</kbd> so they're used to input accented u's. On AZERTY, key <kbd>7</kbd> is used to input `è` which is an e with a *grave* accent but since it made more sense to pack all accented e's together, that key is free to be used for accented u's. Since key <kbd>7</kbd> inputs *grave* accent in AZERTY, I deciced it would be a good fit for u with a *grave* accent in ProgramISO. 
 
-Key <kbd>9</kbd> is close to <kbd>I</kbd> so this is where you'll find `î`.
+Key <kbd>9</kbd> is also the key used to enter opening parenthesis. Consequently, the same key can be used to enter opening square brackets `[`.
 
-Key <kbd>0</kbd> is close to <kbd>O</kbd> *and* 0 looks like an 'O' so this is where you'll find `ô`.
+Key <kbd>0</kbd> is also the key used to enter closing parenthesis. Consequently, the same key can be used to enter closing square brackets `]`.
 
 The last two keys are useful if you'd rather get square brackets by a single key press. It also contains « *fancy* » quotes and the degree sign `°` at the exact same place as in AZERTY. I often make bullet points so it's nice to have a fancy bullet point for these purposes `•`.
 
