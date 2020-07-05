@@ -36,6 +36,7 @@
     * Chording is hard. Alternatively I could set a very uncommon symbol at level1 of a key and use text expansion software such as Autokey to expand {weird symbol}{letter} and {letter}{weird symbol}
 * Mod tap the Level 2 of the spacebar.
 * There are way too many ways to enter `[]`. I should remove some.
+* Level 3 <kbd>B</kbd> to do `Ctrl+←` (like in Vim) and <kbd>N</kbd> to do `Ctrl+→`.
 
 
 # Interesting resources
